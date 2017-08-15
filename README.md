@@ -1,1 +1,1 @@
-# normiecash.github.io
+normiecash.github.io
