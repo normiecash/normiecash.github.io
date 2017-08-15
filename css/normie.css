@@ -1,0 +1,20 @@
+img.desaturate {
+    filter: grayscale(100%);
+}
+
+img.normie-size {
+    height: 25px;
+}
+
+div.notseen-spacer {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+div.notseen-disclaimer {
+    margin-top: -32px;
+    margin-bottom: 10px;
+    background-color: #ed1650;
+    text-align: center;
+    color: #fff;
+}
