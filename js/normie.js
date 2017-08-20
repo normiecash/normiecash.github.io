@@ -1,12 +1,11 @@
 function loadNotSeen() {
-    var rowSize = 5
     var notSeen = [
         'fastcompany',
         'forbes',
         'wired',
         'wsj',
     ];
-
+    var rowSize = notSeen.length
     var rows = [];
     var goFor = Math.floor(notSeen.length / rowSize);
 
@@ -32,9 +31,9 @@ function loadNotSeen() {
 };
 
 function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min;
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
 }
 
 function loadMessages() {
@@ -55,10 +54,23 @@ function loadMessages() {
     return message;
 }
 
+// init
 $(function() {
+    new Clipboard('.clippy');
+    $('[data-toggle="tooltip"]').tooltip({
+        placement: 'bottom',
+        title: 'Copied!',
+        trigger: 'click',
+    });
     loadNotSeen();
     $('#messages').text(loadMessages());
     setInterval(function() {
         $('#messages').text(loadMessages());
     }, 2000);
 });
+
+$('[data-toggle="tooltip"]').on('shown.bs.tooltip', function () {
+    setTimeout(function() {
+        $('[data-toggle="tooltip"]').tooltip('hide');
+    }, 1000);
+})

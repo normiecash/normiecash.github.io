@@ -31,6 +31,9 @@
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="https://github.com/normiecash/normiecash.github.io">
                 <i class="fa fa-github"></i>
               </a>
@@ -38,24 +41,22 @@
           </ul>
         </div>
       </div>
-      <div class="jumbotron">
-        <h1 class="display-3">Got Normie-ism?</h1>
+      <div class="jumbotron evolve" style="background-image: url('img/pepeevolve.svg');">
+        <h1 class="display-3">Got Normies?</h1>
         <p class="lead">Normies have infiltrated the mainstream.</p>
         <hr class="my-4">
         <p>Use Normie Cash to <strong id="messages"></strong>!</p>
         <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          <a class="btn btn-primary btn-lg" href="#about" role="button">Learn more</a>
         </p>
       </div>
       <div class="notseen-disclaimer">
         <small>NOT FEATURED IN</small>
       </div>
-      <div>
-        <div class="container" id="notseen">
-        </div>
+      <div class="container-fluid notseen-container" id="notseen">
       </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-lg-6">
           <br>
@@ -64,6 +65,10 @@
             <br>
             <h5>The currency of balling out.</h5>
           </p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
           <br>
           <p>
             We seek to fund the Foundation for Normie Detection by issuing
@@ -83,21 +88,60 @@
             <br>
             This bonus will coincide with a universal number, a number so powerful Normies could not touch you.
             <br>
-            To get Normie Cash, donate Ethereum to: 0x2E339F6b094e6521C2AC30268BAbA5Aa2603aE86
+            To get Normie Cash, donate Ethereum to:
+            <div class="input-group">
+              <input class="crypto-address" id="ethaddress" value="0x2E339F6b094e6521C2AC30268BAbA5Aa2603aE86" readonly></input>
+              <span class="input-group-btn">
+                <button class="btn btn-primary clippy" data-toggle="tooltip" data-clipboard-target="#ethaddress">
+                  <i class="fa fa-clipboard"></i>
+                </button>
+              </span>
+            </div>
             <br>
             Simple Donation Addresses (will not receive anything in return):
             <br>
-            BTC: 1MBYXX4zrMaeG1KMxsHK66XxTogos95a8t
+            BTC:
+            <div class="input-group">
+              <input class="crypto-address" id="btcaddress" value="1MBYXX4zrMaeG1KMxsHK66XxTogos95a8t" readonly></input>
+              <span class="input-group-btn">
+                <button class="btn btn-primary clippy" data-toggle="tooltip" data-clipboard-target="#btcaddress">
+                  <i class="fa fa-clipboard"></i>
+                </button>
+              </span>
+            </div>
             <br>
-            LTC: LSvLuMT8SYRbfqpNZaMyuRJaEUMH9ubAhL
+            LTC:
+            <div class="input-group">
+              <input class="crypto-address" id="ltcaddress" value="LSvLuMT8SYRbfqpNZaMyuRJaEUMH9ubAhL" readonly></input>
+              <span class="input-group-btn">
+                <button class="btn btn-primary clippy" data-toggle="tooltip" data-clipboard-target="#ltcaddress">
+                  <i class="fa fa-clipboard"></i>
+                </button>
+              </span>
+            </div>
             <br>
           </p>
+        </div>
+      </div>
+      <div class="row footer">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4" style="text-align: center;">
+          <div>
+          Copyright Foundation for Normie Detection
+          </div>
+        </div>
+        <div class="col-md-4" style="text-align: right;">
+          <div>
+            Made with <i class="fa fa-heart red"></i> in <a href="http://kekistan.wikia.com/wiki/Republic_of_Kekistan">Kekistan</a>
+          </div>
         </div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
     <script src="js/normie.js"></script>
   </body>
 </html>
