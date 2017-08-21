@@ -36,6 +36,12 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
+function loadCopyrightYear(){
+    var date = new Date();
+    var year = date.getFullYear();
+    $('#copyright').text(year)
+}
+
 function loadMessages() {
     var messages = [
         "take back your future",
@@ -47,11 +53,13 @@ function loadMessages() {
         "support normie detection",
         "thwart the user",
         "pay penance for being a normie",
+        "wing it",
+        "bribe a fed",
     ];
 
     var message = messages[getRandomInt(0, messages.length)];
 
-    return message;
+    $('#messages').text(message);
 }
 
 // init
@@ -62,10 +70,11 @@ $(function() {
         title: 'Copied!',
         trigger: 'click',
     });
+
+    loadCopyrightYear();
     loadNotSeen();
-    $('#messages').text(loadMessages());
     setInterval(function() {
-        $('#messages').text(loadMessages());
+        loadMessages();
     }, 2000);
 });
 
