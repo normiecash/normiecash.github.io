@@ -13,7 +13,11 @@ body {
 }
 
 .borderline {
-    border-bottom: #eb1852 solid;
+    border-bottom: 2px #eb1852 solid;
+}
+
+.borderline-grey {
+    border-bottom: 2px #e9ecef solid;
 }
 
 .anchor {
