@@ -39,7 +39,7 @@ function getRandomInt(min, max) {
 function loadCopyrightYear(){
     var date = new Date();
     var year = date.getFullYear();
-    $('#copyright').text(year)
+    $('#copyright').text(year);
 }
 
 function loadMessages() {

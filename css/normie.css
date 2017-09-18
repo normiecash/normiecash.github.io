@@ -2,6 +2,27 @@ body {
     padding-top: 5.5rem;
 }
 
+.container-fluid.no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.spacing {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.borderline {
+    border-bottom: #eb1852 solid;
+}
+
+.anchor {
+    display: block;
+    height: 115px;
+    margin-top: -115px;
+    visibility: hidden;
+}
+
 .evolve {
     background-position: center;
     background-blend-mode: overlay;
@@ -41,6 +62,8 @@ input.crypto-address {
 div.footer {
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: #e9ecef;
 }
 

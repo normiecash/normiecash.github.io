@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/normie.css">
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid no-padding">
       <div class="navbar navbar-expand-md fixed-top navbar-light bg-white">
         <a class="navbar-brand" href="#" style="font-family: 'VT323', monospace; font-size: 2.4em">
           <img src="img/normie.svg" width="32" style="margin-top: -6px;">
@@ -34,6 +34,12 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#join">Join</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#donate">Donate</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="https://github.com/normiecash/normiecash.github.io">
                 <i class="fa fa-github"></i>
               </a>
@@ -42,8 +48,8 @@
         </div>
       </div>
       <div class="jumbotron evolve" style="background-image: url('img/pepeevolve.svg');">
-        <h1 class="display-3">Got Normies?</h1>
-        <p class="lead">Normies have infiltrated the mainstream.</p>
+        <h1 class="display-3">Join the fight!</h1>
+        <p class="lead">Normies have declared another meme war on the people.</p>
         <hr class="my-4">
         <p>Use Normie Cash to <strong id="messages">wing it</strong>!</p>
         <p class="lead">
@@ -56,39 +62,74 @@
       <div class="container-fluid notseen-container" id="notseen">
       </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid no-padding">
       <div class="row justify-content-center">
-        <div class="col-lg-6">
+        <span class="anchor" id="about"></span>
+        <div class="col-lg-6 spacing borderline">
+          <h2>About</h2>
           <br>
-          <p>
-            <h2>Normie Cash</h2> - <h5><em>noun</em></h5>
-            <br>
-            <h5>The currency of balling out.</h5>
-          </p>
+            <span>Normie Cash</span> - <span><em>noun</em> The currency of the <a href="http://kekistan.wikia.com/wiki/Normies">Normies</a>.</span>
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-lg-6">
+        <span class="anchor" id="join"></span>
+        <div class="col-lg-6 spacing borderline">
+          <div>
+            <h2>Join</h2>
+            <br>
+            <p>
+                The Foundation for a Normie-free Land is asking for your help today!
+                <br>
+                <br>
+                Normies have begun printing thousands of Normie Cash in hopes of taking over the world (again).
+                <br>
+                <br>
+                To stop them we have sent a few Kekistani operatives into <a href="http://kekistan.wikia.com/wiki/Normistan">Normistan</a> in hopes of disrupting their financial
+                system.
+                The operatives were able to install the Pepe-Virus in the Normie Cash printing press housed in the Federal Reserve of Normistan.
+                <br>
+                <br>
+                The virus will allow us to access the printing press and create more Normie Cash for a small fee, paid in Ethereum.
+                By creating more (infinite) Normie Cash we will be able to devalue the currency to 0 (approximately).
+                This will save our world from the Normies.
+                <br>
+                <br>
+                <em>
+                Any excess Ethereum, Bitcoin, or Litecoin left from the Normie Cash exploit will be used
+                to build a wall around Normistan.
+                </em>
+                <br>
+                <br>
+                <strong>Join or Derp!</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <span class="anchor" id="donate"></span>
+        <div class="col-lg-6 spacing">
+          <div>
+          <h2>Donate</h2>
           <br>
           <p>
-            We seek to fund the Foundation for Normie Detection by issuing
-            Normie Cash (NORME) in exchange for Ethereum. We will use these
-            funds to aid the development of an innovative detection scheme.
-            This detector will allow all whom possess it to detect Normie
-            hordes.
-          </p>
-          <p id="about">
-            Normie Cash Smart Contract Details:
+            Review the Normie Cash contract on <a href="https://etherscan.io/address/0x2e339f6b094e6521c2ac30268baba5aa2603ae86">Etherscan</a>
             <br>
-            All donations will be accepted. Be sure to fund enough to make a successful transaction.
             <br>
-            1 ETH = 100 Normie Cash tokens
+            All donations will be accepted.
+            <br>
+            Be sure to make a large enough donation otherwise the transaction could fail by running out of gas.
+            <br>
+            Don't use an exchange backed wallet (eg. Coinbase or Kraken) to fund the campaign as you will not be able to receive Normie Cash.
+            <br>
+            <br>
+            1 ETH = 1000 Normie Cash tokens
+            <br>
             <br>
             If you donate more than 0.01 ETH you will receive a bonus based on the amount you donate.
             <br>
-            This bonus will coincide with a universal number, a number so powerful Normies could not touch you.
             <br>
             To get Normie Cash, donate Ethereum to:
+            <br>
             <div class="input-group">
               <input class="crypto-address" id="ethaddress" value="0x2E339F6b094e6521C2AC30268BAbA5Aa2603aE86" readonly></input>
               <span class="input-group-btn">
@@ -99,6 +140,7 @@
             </div>
             <br>
             Simple Donation Addresses (will not receive anything in return):
+            <br>
             <br>
             BTC:
             <div class="input-group">
@@ -122,13 +164,14 @@
             <br>
           </p>
         </div>
+        </div>
       </div>
       <div class="row footer">
         <div class="col-md-4">
         </div>
         <div class="col-md-4" style="text-align: center;">
           <div>
-          Copyright &copy; <span id="copyright"></span> Foundation for Normie Detection
+          Copyright &copy; <span id="copyright"></span> Foundation for a Normie-free Land
           </div>
         </div>
         <div class="col-md-4" style="text-align: right;">
